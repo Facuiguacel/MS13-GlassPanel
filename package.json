@@ -1,0 +1,28 @@
+{
+  "name": "ms13-glasspanel",
+  "version": "1.0.0",
+  "description": "This is an example of integration between the instruments developed  by Matton Sébastien (https://github.com/sebmatton/jQuery-Flight-Indicators) and David Ross (https://github.com/Bagarre/Pi2D2) with the rest of Exterimental Avionics components.",
+  "main": "webserver.js",
+  "scripts": {
+    "start": "node webserver.js",
+    "dev": "nodemon webserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Facuiguacel/MS13-GlassPanel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Facuiguacel/MS13-GlassPanel/issues"
+  },
+  "homepage": "https://github.com/Facuiguacel/MS13-GlassPanel#readme",
+  "dependencies": {
+    "socket.io": "^4.8.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

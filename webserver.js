@@ -1,12 +1,11 @@
 var http = require('http').createServer(handler); //require http server, and create server with function handle$
 var fs = require('fs'); //require filesystem module
 var path = require('path');
-var io = require('socket.io')(http) //require socket.io module and pass the http object (server)
+const io = require('socket.io')(http, {
+  pingTimeout: 4000,      // How long without a pong packet to consider the connection closed
+  pingInterval: 25000     // How often to send a ping packet
+});
 //io.set('transports',['websocket']);
-
-io.set('heartbeat timeout', 4000);
-io.set('heartbeat interval', 2000);
-
 
 const sqlite3 = require('sqlite3').verbose();
 
